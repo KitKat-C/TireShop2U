@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Book Appointment</title>
+</head>
+<body>
+        <!--Navbar Section-->
+    <nav class="navbar">
+            <div class="navbar__container">
+                <a href="index.html" id="navbar__logo">
+                  <img src="Images/logo.pdf.svg" alt="logo">
+                </a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                  <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a href="/services.html" class="navbar__links">Services</a>
+                  </li> 
+                  <li class="navbar__item">
+                    <a href="/contactUs.html" class="navbar__links">Contact Us</a>
+                  </li> 
+                  <li class="navbar__btn">
+                    <a href="/bookAppt.html" class="button">Book Appointment</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+ <div class="bookAppt__title">
+    <h1>Book Your Appointment</h1>
+</div>
+
+</div>
+  <!-- Appointment Form -->
+  <div class="landscape-apptform-wrap">
+  <section class="bookAppt__form">
+    <form action="#" method="POST">
+      <div class="input-group">
+        <div>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+      </div>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <div class="address-group">
+        <label for="address-line1">Installation Address:</label>
+        <input type="text" id="address-line1" name="address-line1" placeholder="Street Address" required />
+        <input type="text" id="address-line2" name="address-line2" placeholder="Apartment, Suite, etc. (Optional)" />
+      </div>
+
+      <div class="input-group">
+        <div>
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required />
+        </div>
+        <div>
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required />
+        </div>
+        <div>
+          <label for="zip">Zip Code:</label>
+          <input type="text" id="zip" name="zip" required />
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div>
+          <label for="vehicle-year">Vehicle Year:</label>
+          <input type="number" id="vehicle-year" name="vehicle-year" min="1900" max="2025" required />
+        </div>
+        <div>
+          <label for="vehicle-make">Make:</label>
+          <input type="text" id="vehicle-make" name="vehicle-make" required />
+        </div>
+        <div>
+          <label for="vehicle-model">Model:</label>
+          <input type="text" id="vehicle-model" name="vehicle-model" required />
+        </div>
+      </div>
+
+      <label for="appointment-date">Preferred Date:</label>
+      <input type="date" id="appointment-date" name="appointment-date" required />
+
+      <label for="services">Select Services:</label>
+      <select id="services" name="services[]" multiple required>
+        <option value="tire-installation">Tire Installation</option>
+        <option value="flat-tire-repair">Flat Tire Repair</option>
+        <option value="tire-rotation">Tire Rotation</option>
+        <option value="sensor-programming">Sensor Programming</option>
+        <option value="atv-utv-tires">ATV/UTV Tires</option>
+        <option value="emergency-roadside">Emergency Roadside Service</option>
+      </select>
+      <label for="tire-size">Tire Size (optional):</label>
+      <input type="text" id="tire-size" name="tire-size" placeholder="e.g., 225/65R17" />
+      
+      <label for="tire-brand">Preferred Tire Brand (optional):</label>
+      <input type="text" id="tire-brand" name="tire-brand" placeholder="e.g., Michelin, Goodyear" />
+      
+      <label for="notes">Additional Notes:</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Any specific instructions or requests..."></textarea>
+
+      <button type="submit">Book Now</button>
+    </form>
+</div>
+  </section>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Footer Logo -->
+            <a href="index.html" id="footer__logo">
+                <img src="images/logo.pdf.svg" alt="Tire Shop 2U Logo">
+            </a>
+      
+            <!-- Footer Navigation Links -->
+            <div class="footer__menu">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="bookAppt.html">Book Appointment</a>
+                <a href="index.html#about">About</a>
+            </div>
+      
+            <div class="footer__social">
+                <a href="https://www.instagram.com/tireshop2u_hd?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" class="social__icon--link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social__icon--link"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+</footer>
+    <script src="app.js"></script>
+</body>
+</html>
